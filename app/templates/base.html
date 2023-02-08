@@ -1,0 +1,14 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - Blog</title>
+        {% else %}
+        <title>Welcome to the Blog</title>
+        {% endif %}
+    </head>
+<body>
+    <div>Blog: <a href="/home/ivan/flask/app/templates/index.html">Home</a></div>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
